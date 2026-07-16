@@ -13,7 +13,7 @@ describe("ReceitaRepository", () => {
     await repo.salvar([]);
   });
 
-  // Depois de todos: apagar arquivo temporario
+
   afterAll(() => {
     if (existsSync(ARQUIVO_TESTE)) unlinkSync(ARQUIVO_TESTE);
   });
