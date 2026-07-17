@@ -12,4 +12,4 @@ app.set("views", "./src/views");
 app.use(pageRoutes);
 app.use(apiRoutes);
 
-app.listen(3000, () => console.log("Galeria de Receitas rodando em http://localhost:3000"));
+export default app;

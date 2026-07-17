@@ -3,7 +3,7 @@ import { ReceitaRepository } from "../models/ReceitaRepository";
 import { upload } from "../middlewares/upload";
 
 export const apiRoutes = Router();
-const repo = new ReceitaRepository();
+const repo = new ReceitaRepository("dados/receitas_integracao.json");
 
 apiRoutes.get("/api/receitas", async (req: Request, res: Response) => {
   try {
